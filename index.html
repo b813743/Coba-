@@ -1,106 +1,100 @@
+<!DOCTYPE html>
 <html lang="en">
- <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1" name="viewport"/>
-  <title>
-   DANA Login
-  </title>
-  <script src="https://cdn.tailwindcss.com">
-  </script>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DANA Login</title>
+  <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"/>
   <style>
-   body {
+    body {
       font-family: 'Montserrat', sans-serif;
     }
   </style>
- </head>
- <body class="bg-white">
+</head>
+<body class="bg-white">
   <div class="bg-[#0D82F4] w-full h-36 rounded-b-3xl relative">
-   <div class="max-w-md mx-auto pt-10 px-6">
-    <div class="bg-white rounded-xl pt-8 pb-6 px-6 shadow-md relative -top-16">
-     <div class="flex justify-center mb-6">
-      <img alt="DANA logo blue circle with white wave inside and text DANA in blue" class="w-12 h-12 object-contain" height="48" src="https://storage.googleapis.com/a1aa/image/3bebb095-2419-4e7c-30c1-febe134d0405.jpg" width="48"/>
-     </div>
-     <hr class="border-gray-300 mb-6"/>
-     <form>
-      <label class="block text-gray-900 font-semibold text-base mb-3" for="phone">
-       Masukkan nomor HP sebagai ID DANA
-      </label>
-      <div class="flex items-center border border-gray-300 rounded-lg px-4 py-3 mb-8">
-       <img alt="Indonesian flag round icon" class="w-6 h-6 rounded-full" height="24" src="https://storage.googleapis.com/a1aa/image/7e407d8a-0132-4e7b-8998-85748553a706.jpg" width="24"/>
-       <span class="text-gray-900 font-normal text-lg ml-3">
-        +62
-       </span>
-       <input class="ml-3 placeholder-gray-300 text-lg text-gray-300 focus:outline-none flex-1" id="phone" placeholder="12312345678" type="text"/>
+    <div class="max-w-md mx-auto pt-10 px-6">
+      <div class="bg-white rounded-xl pt-8 pb-6 px-6 shadow-md relative -top-16">
+        <div class="flex justify-center mb-6">
+          <img alt="Logo DANA" src="dana-logo.png" class="w-12 h-12 object-contain" width="48" height="48" />
+        </div>
+        <hr class="border-gray-300 mb-6" />
+        <form onsubmit="return false;">
+          <label class="block text-gray-900 font-semibold text-base mb-3" for="phone">
+            Masukkan nomor HP sebagai ID DANA
+          </label>
+          <div class="flex items-center border border-gray-300 rounded-lg px-4 py-3 mb-8">
+            <img alt="Indonesian flag" class="w-6 h-6 rounded-full" src="https://storage.googleapis.com/a1aa/image/7e407d8a-0132-4e7b-8998-85748553a706.jpg" width="24" height="24" />
+            <span class="text-gray-900 font-normal text-lg ml-3">+62</span>
+            <input id="phone" type="text" placeholder="12312345678" class="ml-3 placeholder-gray-300 text-lg text-gray-300 focus:outline-none flex-1"/>
+          </div>
+          <p class="text-gray-900 font-semibold text-base mb-4">
+            Berbagai kemudahan bisa kamu dapatkan di DANA!
+          </p>
+          <div class="space-y-6">
+            <div class="flex items-start gap-4">
+              <img class="w-12 h-12 flex-shrink-0 rounded-full bg-blue-200 p-2" src="https://storage.googleapis.com/a1aa/image/30f90382-10d8-45cb-7763-86427bbced1e.jpg" />
+              <div>
+                <p class="font-semibold text-gray-900 text-sm leading-tight">Dompet digital untuk kamu</p>
+                <p class="text-gray-500 text-sm leading-tight max-w-[280px]">Simpan uang serta kartu debit/kredit dengan praktis di DANA.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <img class="w-12 h-12 flex-shrink-0 rounded-full bg-blue-200 p-2" src="https://storage.googleapis.com/a1aa/image/afe984cc-1fe2-4afa-f070-edcec03dcf16.jpg" />
+              <div>
+                <p class="font-semibold text-gray-900 text-sm leading-tight">Membayar apa pun itu mudah.</p>
+                <p class="text-gray-500 text-sm leading-tight max-w-[280px]">Belanja di merchant? Tinggal scan QRIS. Mau bayar online? Tinggal kirim uang!</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <img class="w-12 h-12 flex-shrink-0 rounded-full bg-blue-200 p-2" src="https://storage.googleapis.com/a1aa/image/fbdb40e7-87c0-4c8d-851f-f618fd9d0c47.jpg" />
+              <div>
+                <p class="font-semibold text-gray-900 text-sm leading-tight">Selalu aman dengan DANA!</p>
+                <p class="text-gray-500 text-sm leading-tight max-w-[280px]">DANA Protection menjaga uang sekaligus datamu lengkap dengan kode PIN agar selalu aman.</p>
+              </div>
+            </div>
+          </div>
+        </form>
       </div>
-      <p class="text-gray-900 font-semibold text-base mb-4">
-       Berbagai kemudahan bisa kamu dapatkan di DANA!
-      </p>
-      <div class="space-y-6">
-       <div class="flex items-start gap-4">
-        <img alt="Blue wallet with cards and coins digital wallet illustration" class="w-12 h-12 flex-shrink-0 rounded-full bg-blue-200 p-2" height="48" src="https://storage.googleapis.com/a1aa/image/30f90382-10d8-45cb-7763-86427bbced1e.jpg" width="48"/>
-        <div>
-         <p class="font-semibold text-gray-900 text-sm leading-tight">
-          Dompet digital untuk kamu
-         </p>
-         <p class="text-gray-500 text-sm leading-tight max-w-[280px]">
-          Simpan uang serta kartu debit/kredit dengan praktis di DANA.
-         </p>
-        </div>
-       </div>
-       <div class="flex items-start gap-4">
-        <img alt="Woman holding phone with QR code payment illustration" class="w-12 h-12 flex-shrink-0 rounded-full bg-blue-200 p-2" height="48" src="https://storage.googleapis.com/a1aa/image/afe984cc-1fe2-4afa-f070-edcec03dcf16.jpg" width="48"/>
-        <div>
-         <p class="font-semibold text-gray-900 text-sm leading-tight">
-          Membayar apa pun itu mudah.
-         </p>
-         <p class="text-gray-500 text-sm leading-tight max-w-[280px]">
-          Belanja di merchant? Tinggal scan QRIS. Mau bayar online?
-                  Tinggal kirim uang!
-         </p>
-        </div>
-       </div>
-       <div class="flex items-start gap-4">
-        <img alt="Hand holding phone with shield and checkmark security illustration" class="w-12 h-12 flex-shrink-0 rounded-full bg-blue-200 p-2" height="48" src="https://storage.googleapis.com/a1aa/image/fbdb40e7-87c0-4c8d-851f-f618fd9d0c47.jpg" width="48"/>
-        <div>
-         <p class="font-semibold text-gray-900 text-sm leading-tight">
-          Selalu aman dengan DANA!
-         </p>
-         <p class="text-gray-500 text-sm leading-tight max-w-[280px]">
-          DANA Protection menjaga uang sekaligus datamu lengkap dengan
-                  kode PIN agar selalu aman.
-         </p>
-        </div>
-       </div>
-      </div>
-     </form>
     </div>
-   </div>
   </div>
+
   <div class="max-w-md mx-auto px-6 mt-6">
-   <p class="text-center text-gray-500 text-sm mb-4">
-    Keamanan datamu dilindungi oleh DANA Protection.
-   </p>
-   <button class="w-full bg-gray-500 text-white text-lg font-normal py-3 rounded-md mb-6" type="submit">
-    LANJUTKAN
-   </button>
-   <div class="flex items-center justify-between text-gray-700 text-sm font-normal">
-    <div class="flex items-center gap-2">
-     <span>
-      Diamankan oleh
-     </span>
-     <img alt="Blue lock icon" class="w-6 h-6" height="24" src="https://storage.googleapis.com/a1aa/image/81a569b7-2fe0-4c71-6f14-bc49277c0865.jpg" width="24"/>
-     <span class="text-[#0D82F4] font-semibold">
-      DANA PROTECTION
-     </span>
-    </div>
-    <button class="flex items-center gap-1 border border-[#0D82F4] text-[#0D82F4] font-semibold rounded px-3 py-1 text-xs" type="button">
-     MEMBANTU
-     <i class="fas fa-question-circle">
-     </i>
+    <p class="text-center text-gray-500 text-sm mb-4">
+      Keamanan datamu dilindungi oleh DANA Protection.
+    </p>
+    <button id="submitBtn" class="w-full bg-gray-300 text-white text-lg font-normal py-3 rounded-md mb-6 cursor-not-allowed" type="submit" disabled>
+      LANJUTKAN
     </button>
-   </div>
+    <div class="flex items-center justify-between text-gray-700 text-sm font-normal">
+      <div class="flex items-center gap-2">
+        <span>Diamankan oleh</span>
+        <img class="w-6 h-6" src="https://storage.googleapis.com/a1aa/image/81a569b7-2fe0-4c71-6f14-bc49277c0865.jpg" />
+        <span class="text-[#0D82F4] font-semibold">DANA PROTECTION</span>
+      </div>
+      <button class="flex items-center gap-1 border border-[#0D82F4] text-[#0D82F4] font-semibold rounded px-3 py-1 text-xs" type="button">
+        MEMBANTU <i class="fas fa-question-circle"></i>
+      </button>
+    </div>
   </div>
- </body>
-</html>
+
+  <script>
+    const phoneInput = document.getElementById('phone');
+    const submitBtn = document.getElementById('submitBtn');
+
+    phoneInput.addEventListener('input', function () {
+      if (phoneInput.value.trim().length >= 8) {
+        submitBtn.disabled = false;
+        submitBtn.classList.remove('bg-gray-300', 'cursor-not-allowed');
+        submitBtn.classList.add('bg-[#0D82F4]', 'hover:bg-blue-600');
+      } else {
+        submitBtn.disabled = true;
+        submitBtn.classList.add('bg-gray-300', 'cursor-not-allowed');
+        submitBtn.classList.remove('bg-[#0D82F4]', 'hover:bg-blue-600');
+      }
+    });
+  </script>
+</body>
+ </html>
