@@ -10,11 +10,7 @@
       margin: 0;
       padding: 0;
       min-height: 100vh;
-      background-image: url('motor-bg.jpg');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
+      background-color: black;
       color: white;
       display: flex;
       flex-direction: column;
@@ -25,12 +21,12 @@
     h1 {
       font-size: 2.2rem;
       margin-bottom: 1rem;
-      color: black;
+      color: white;
     }
 
     p {
       font-size: 1.1rem;
-      color: black;
+      color: white;
       margin-bottom: 1.5rem;
       line-height: 1.6;
       text-align: center;
@@ -75,7 +71,6 @@
       transform: scale(1.05);
     }
 
-    
     .instagram { background-color: #E1306C; }
     .tiktok { background-color: #010101; }
     .whatsapp { background-color: #25D366; }
@@ -111,11 +106,6 @@
         window.location.href = 'https://b813743.github.io/NOMOR-DANA/';
       }, 500);
     }
-
-    function tampilkanGambarKaos() {
-      const img = document.getElementById('kaosGambar');
-      img.style.display = img.style.display === 'none' ? 'block' : 'none';
-    }
   </script>
 </head>
 <body>
@@ -126,6 +116,5 @@
 
   <a href="#" class="btn-masuk" onclick="masukHalaman()">Login Verifikasi</a>
   <a href="https://b813743.github.io/NOMOR-DANA/" class="btn-kontak" target="_blank">Hubungi Kami</a>
-
 </body>
 </html>
